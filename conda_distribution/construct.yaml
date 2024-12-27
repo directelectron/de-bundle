@@ -1,7 +1,7 @@
 {% set version = os.environ.get("VERSION", "2021.07.08") %}
 {% set blas_impl = os.environ.get("BLAS_IMPL", "openblas") %}
 
-name: HyperSpy-bundle
+name: DE-bundle
 version: {{ version }}
 
 condarc:
@@ -76,15 +76,15 @@ transmute_file_type: ".conda"               # [not arm64]
 installer_type: pkg                         # [osx]
 
 # Icon image for Windows installer
-icon_image: hyperspy_bundle_installer.ico   # [win]
+icon_image: DirectElectronBundle.ico   # [win]
 
-default_prefix: '%USERPROFILE%\HyperSpy-bundle' # [win]
+default_prefix: '%USERPROFILE%\DE-bundle' # [win]
 
 welcome_image_text: |-
-                    HyperSpy
+                    DE
                     bundle
 header_image_text:  |-
-                    HyperSpy
+                    DE
                     bundle
 
-company: The HyperSpy developers
+company: Direct Electron
